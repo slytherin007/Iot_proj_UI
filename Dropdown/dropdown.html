@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nice Dropdown</title>
+    <link rel="stylesheet" href="dropdown.css">
+</head>
+<body>
+    <div class="container">
+        <button id="dropdownButton" class="dropdown-btn">Select Color</button>
+        <div class="dropdown-content" id="colorDropdown">
+            <div class="dropdown-item" onclick="submitColor('#EEF5FF')">Light Blue</div>
+            <div class="dropdown-item" onclick="submitColor('#B4D4FF')">Blue</div>
+            <div class="dropdown-item" onclick="submitColor('#86B6F6')">Sky Blue</div>
+            <div class="dropdown-item" onclick="submitColor('#176B87')">Dark Blue</div>
+        </div>
+        <p id="selectedColor">Selected Color: None</p>
+    </div>
+    <script src="dropdown.js"></script>
+</body>
+</html>

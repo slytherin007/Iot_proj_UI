@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign-up</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="tabs">
+            <div class="tab active-tab" onclick="showTab('loginTab')">Login</div>
+            <div class="tab" onclick="showTab('signupTab')">Sign Up</div>
+        </div>
+
+        <div id="loginTab" class="form-group">
+            <label for="loginEmail">Email:</label><br>
+            <input type="email" id="loginEmail" placeholder="Enter your email"><br><br>
+            <label for="loginPassword">Password:</label><br>
+            <input type="password" id="loginPassword" placeholder="Enter your password"><br><br>
+            <button onclick="login()">Login</button>
+        </div>
+
+        <div id="signupTab" class="form-group" style="display: none;">
+            <label for="signupEmail">Email:</label><br>
+            <input type="email" id="signupEmail" placeholder="Enter your email"><br><br>
+
+            <label for="signupPassword">Password:</label><br>
+            <input type="password" id="signupPassword" placeholder="Enter your password"><br><br>
+
+            <label for="confirmPassword">Confirm Password:</label><br>
+            <input type="password" id="confirmPassword" placeholder="Confirm your password"><br><br>
+            
+            <button onclick="signup()">Sign Up</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
